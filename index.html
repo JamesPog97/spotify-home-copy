@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script
+    src="https://kit.fontawesome.com/30fa3c5c63.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <!-- tutto il contenuto della pagina a parte il player -->
+  <div class="container">
+    <!-- menu laterale -->
+    <aside>
+      <nav>
+        <div>
+          <a href="#home">
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="#search">
+            <i class="fa fa-search"></i>
+            <span>Cerca</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="library">
+        
+        <header>
+          <a href="#library" title="Comprimi La tua libreria">
+            <i class="fas fa-list"></i>
+            <span>La tua libreria</span>
+          </a>
+
+          <div class="buttons">
+            <a href="#add" title="Crea una playlist o una cartella">
+              <i class="fa fa-plus"></i>
+            </a>
+            <a href="#enlarge" title="Allarga La tua libreria">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </header>
+
+        <div class="filters">
+          <a href="#" class="filter">Playlist</a>
+          <a href="#" class="filter">Artisti</a>
+          <a href="#" class="filter">Album</a>
+        </div>
+
+        <div class="search-and-order">
+          <a href="#" title="Cerca in La tua libreria"><i class="fa fa-search"></i></a>
+          <select id="order" name="order">
+            <option value="0">Recenti</option>
+            <option value="1">Aggiunti di recente</option>
+            <option value="2">Ordine alfabetico</option>
+            <option value="3">Autore</option>
+          </select>
+        </div>
+
+        <!-- lista playlist -->
+
+        <div class="elements">
+          <a href="#" class="element active">
+            <div class="thumbnail">
+              <i id="liked" class="fas fa-heart" title="Elimina da La tua libreria"></i>
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Brani che ti piacciono
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> 1.999 Brani
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+          
+          <a href="#" class="element">
+            <div class="thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            
+            <div class="info">
+              <div class="playing">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="title">
+                Chill
+              </div>
+              <div class="type">
+                Playlist <span>&middot;</span> JamesPog
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- contenuto principale -->
+    <main>
+      <nav>
+        <div class="prev-next">
+          <i class="material-icons">&#xe314;</i>
+          <i class="material-icons">&#xe315;</i>
+        </div>
+        <div class="profile">
+          <a href="#" title="JamesPog"><img src="img/rana.jpg" alt="rana"></a>
+        </div>
+      </nav>
+      
+      <div>
+        <h1 id="greetings">Buon pomeriggio</h1>
+        
+        <section class="recent">
+          <div class="r-element">
+            <div class="r-thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            <span>Chill</span>
+            <i class="material-icons">&#xe038;</i>
+          </div>
+          
+          <div class="r-element">
+            <div class="r-thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            <span>Chill</span>
+            <i class="material-icons">&#xe038;</i>
+          </div>
+          
+          <div class="r-element">
+            <div class="r-thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            <span>Chill</span>
+            <i class="material-icons">&#xe038;</i>
+          </div>
+          
+          <div class="r-element">
+            <div class="r-thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            <span>Chill</span>
+            <i class="material-icons">&#xe038;</i>
+          </div>
+
+          <div class="r-element">
+            <div class="r-thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            <span>Chill</span>
+            <i class="material-icons">&#xe038;</i>
+          </div>
+          
+          <div class="r-element">
+            <div class="r-thumbnail">
+              <img src="img/next-door.png" alt="">
+            </div>
+            <span>Chill</span>
+            <i class="material-icons">&#xe038;</i>
+          </div>
+        </section>
+      </div>
+        
+      <section class="suggest">
+        <div class="s-header">
+          <h2><a href="#">Creato per Te</a></h2>
+          <span><a href="#">Mostra tutto</a></span>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="suggest">
+        <div class="s-header">
+          <h2><a href="#">Creato per Te</a></h2>
+          <span><a href="#">Mostra tutto</a></span>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="suggest">
+        <div class="s-header">
+          <h2><a href="#">Creato per Te</a></h2>
+          <span><a href="#">Mostra tutto</a></span>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="suggest">
+        <div class="s-header">
+          <h2><a href="#">Creato per Te</a></h2>
+          <span><a href="#">Mostra tutto</a></span>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="img/daily-mix.jpg" alt="Daily Mix">
+              <i class="material-icons">&#xe038;</i>
+            </div>
+            <h3>Daily Mix 1</h3>
+            <div>Bla bla, Blablabla, Bla Bla e altro</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="links-social">
+          <div class="links">
+            <div>
+              <h4>Aziende</h4>
+              <a href="#">Chi siamo</a>
+              <a href="#">Opportunità di lavoro</a>
+              <a href="#">For the Record</a>
+            </div>
+
+            <div>
+              <h4>Community</h4>
+              <a href="#">Per artisti</a>
+              <a href="#">Sviluppatori</a>
+              <a href="#">Pubblicità</a>
+              <a href="#">Investitori</a>
+              <a href="#">Venditori</a>
+              <a href="#">Spotify for Work</a>
+            </div>
+
+            <div>
+              <h4>Link utili</h4>
+              <a href="#">Assistenza</a>
+              <a href="#">App per cellulare gratuita</a>
+              <a href="#">Diritti dek consumatore</a>
+            </div>
+          </div>
+
+          <div class="social">
+            <i class="fab fa-instagram" title="Instagram"></i>
+            <i class="fab fa-twitter" title="Twitter"></i>
+            <i class="fab fa-facebook" title="Facebook"></i>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="legal-info">
+          <a href="#">Informazioni legali</a>
+          <a href="#">Centro sulla privacy</a>
+          <a href="#">Informativa sulla privacy</a>
+          <a href="#">Impostazioni coockie</a>
+          <a href="#">Info annunci</a>
+          <span>© 2023 Spotify AB</span>
+        </div>
+      </footer>
+    </main>
+  <!-- chiusura container -->
+  </div>
+
+  <!-- player -->
+  <div class="player">
+    <div class="song">
+      <a href="#">
+        <img src="img/contro_gli_estimatori.jpg" alt="Album">
+      </a>
+      <div>
+        <a href="#">Rappresento per il fine settimana</a><br>
+        <a href="#"><span>Bassi Maestro, Esa</span></a>
+        <i id="saved" class="fas fa-heart" title="Elimina da La tua libreria"></i>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="play-controls">
+        <i class="fas fa-random" title="Abilita riproduzione casuale"></i>
+        <i class="material-icons" title="Indietro">&#xe045;</i>
+        <i class="material-icons" title="Play">&#xe038;</i>
+        <i class="material-icons" title="Avanti">&#xe044;</i>
+        <i class="material-icons" title="Abilita ripetizione">&#xe040;</i>
+      </div>
+      
+      <div class="play-bar">
+        <span>0:00</span>
+        <progress value="0" max="100"></progress>
+        <span>3:40</span>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <i class="material-icons" title="Coda">&#xe03d;</i>
+      <i class="material-icons" title="Connetti a un dispositivo">&#xe337;</i>
+      <i class="material-icons" title="Disattiva audio">&#xe04d;</i>
+      <!-- <input type="range" min="1" max="100" value="50" class="slider" > -->
+      <div class="slider-bar">
+        <div class="slider"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
